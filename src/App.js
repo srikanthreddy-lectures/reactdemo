@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
+import Browser from './Components/Browser';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <button className='btn btn-success'>My Button</button>
     </div>
+    <Browser/>
     </>
   );
 }
