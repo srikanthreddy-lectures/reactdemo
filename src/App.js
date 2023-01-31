@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <button className='btn btn-success'>My Button</button>
     </div>
-    <Browser/>
+    <h1>Hello</h1>
     </>
   );
 }
