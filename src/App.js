@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <button className='btn btn-success'>My Button</button>
     </div>
-    <h1>Hello</h1>
+    <h1>Hello PS</h1>
     </>
   );
 }
