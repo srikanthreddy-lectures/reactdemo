@@ -2,42 +2,70 @@
 function Navbar() {
     return (
       <div>
-          <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-            <a className="navbar-brand" href="#">Navbar scroll</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarScroll">
-            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-                <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-                </li>
-                <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Link
-                </a>
-                <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="#">Action</a></li>
-                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                    <li><hr className="dropdown-divider"/></li>
-                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-                </li>
-                <li className="nav-item">
-                <a className="nav-link disabled">Link</a>
-                </li>
-            </ul>
-            <form className="d-flex" role="search">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div className="container-fluid">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sidebar"
+          aria-controls="offcanvasExample"
+        >
+          <span className="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+        </button>
+        <a
+          className="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
+          href="#"
+          >SKR-Moringa</a
+        >
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topNavBar"
+          aria-controls="topNavBar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="topNavBar">
+          <form className="d-flex ms-auto my-3 my-lg-0">
+            <div className="input-group">
+              <input
+                className="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-primary" type="submit">
+                <i className="bi bi-search"></i>
+              </button>
             </div>
+          </form>
+          <ul className="navbar-nav">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle ms-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i className="bi bi-person-fill"></i>
+              </a>
+              <ul className="dropdown-menu dropdown-menu-end">
+                <li><a className="dropdown-item" href="#">Account</a></li>
+                <li><a className="dropdown-item" href="#">Settings</a></li>
+                <li>
+                  <a className="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        </nav>
+      </div>
+    </nav>
       </div>
     );
   }
