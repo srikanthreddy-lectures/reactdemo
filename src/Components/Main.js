@@ -1,6 +1,6 @@
 import BarChart from "./BarChart";
 import CardInfo from "./CardInfo";
-import PiChart from "./PiChart";
+import LineChart from "./LineChart";
 import TableData from "./TableData";
 
 function Main() {
@@ -34,11 +34,12 @@ function Main() {
 
         <div className="row">
           <div className="col-md-6 mb-3">
-            <PiChart/>
+            <LineChart/>
           </div>
           <div className="col-md-6 mb-3">
             <BarChart/>
           </div>
+          
         </div>
         <div className="row">
           <div className="col-md-12 mb-3">
