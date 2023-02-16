@@ -1,18 +1,27 @@
-import Main from './Components/Main';
-import Navbar from './Components/Navbar';
-import Sidebar from './Components/Sidebar';
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import AuthComponent from "./Components/AuthComponent";
+import FreeComponent from "./Components/FreeComponent";
+import Login from './Components/Login/Login';
+import Navbar from './Components/Login/Navbar'
+import ProtectedRoutes from "./Components/ProtectedRoutes";
+
 
 function App() {
   return (
-    <>
-    <Navbar/>
-    <Sidebar/>
-    <Main/>
-    <div className="App">
-      <button className='btn btn-success'>My Button</button>
-    </div>
-
-    </>
+    <Routes>
+      <Route exact path="/" element={<><Navbar/><Login/></>} />
+      <Route exact path="/free" element={<FreeComponent/>} />
+      <Route exact 
+             path="/auth" 
+             element=
+                  {
+                    <ProtectedRoutes>
+                      <AuthComponent/>
+                    </ProtectedRoutes>
+                  } 
+      />
+    </Routes>
   );
 }
 

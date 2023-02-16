@@ -1,5 +1,5 @@
 import React ,{useState,useEffect} from "react";
-import JsonData from '../data/data.json'
+import JsonData from '../../data/data.json'
 import $ from 'jquery';
 
 import axios from "axios";

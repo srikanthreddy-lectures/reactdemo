@@ -1,7 +1,7 @@
 //import BarChart from "./BarChart";
-import CardInfo from "./CardInfo";
+import CardInfo from "../Common/CardInfo";
 //import LineChart from "./LineChart";
-import TableData from "./TableData";
+import TableData from "../Common/TableData";
 
 function Main() {
 
