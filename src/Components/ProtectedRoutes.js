@@ -8,7 +8,6 @@ export default function ProtectedRoutes({ component: Component, ...rest }) {
   return (
 
     // this route takes other routes assigned to it from the App.js and return the same route if condition is met
-   <Routes>
     <Route
       {...rest}
       render={(props) => {
@@ -36,6 +35,5 @@ export default function ProtectedRoutes({ component: Component, ...rest }) {
         }
       }}
     />
-    </Routes>
   );
 }

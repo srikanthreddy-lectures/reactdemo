@@ -58,7 +58,7 @@ function Navbar() {
                 <li><a className="dropdown-item" href="#">Account</a></li>
                 <li><a className="dropdown-item" href="#">Settings</a></li>
                 <li>
-                  <a className="dropdown-item" href="#">Logout</a>
+                  <a className="dropdown-item" href="/logout">Logout</a>
                 </li>
               </ul>
             </li>

@@ -3,9 +3,7 @@ import CardInfo from "../Common/CardInfo";
 //import LineChart from "./LineChart";
 import TableData from "../Common/TableData";
 
-function Main() {
-
- 
+function Main(props) {
   return (
 
     <main className="mt-5 pt-3">
@@ -19,7 +17,7 @@ function Main() {
 
         <div className="row">
           <div className="col-md-3 mb-3">
-            <CardInfo c="bg-primary" t="text-white" title="Primary Card"/>
+            <CardInfo c="bg-primary" t="text-white" title={props.message}/>
           </div>
           <div className="col-md-3 mb-3">
             <CardInfo c="bg-warning" t="text-dark" title="Warning Card"/>
