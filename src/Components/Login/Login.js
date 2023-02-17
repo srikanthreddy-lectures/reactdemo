@@ -29,7 +29,7 @@ const handleSubmit = (e) => {
    axios(configuration)
    .then((result) => {
      setLogin(true);
-     cookies.set("TOKEN", result.data.error, {
+     cookies.set("TOKEN", result.data.token, {
        path: "/",
      });
      
