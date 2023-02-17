@@ -20,7 +20,7 @@ useEffect(() => {
   // set configurations for the API call here
   const configuration = {
     method: "get",
-    url: "http://localhost:4000/auth-endpoint",
+    url: "https://cb18-144-24-129-185.in.ngrok.io/auth-endpoint",
     headers: {
       Authorization: `Bearer ${token}`,
     },
