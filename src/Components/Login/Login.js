@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
 
    const configuration = {
     method: "post",
-    url: "https://cb18-144-24-129-185.in.ngrok.io/user/login",
+    url: "https://reactserver.vercel.app/user/login",
     data: {
       email,
       password,
